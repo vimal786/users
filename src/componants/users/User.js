@@ -17,7 +17,7 @@ const User = () =>{
                 useEffect(() => { loadUser() }, []);
                 const {id} = useParams();
                 const loadUser = async () => { 
-                    const rest = await axios.get(`http://localhost:3000/users/${id}`);
+                    const rest = await axios.get(`http://localhost:3003/users/${id}`);
                     console.log(rest.data);
                     setUser(rest.data);
 

@@ -27,14 +27,14 @@ import  { useHistory, useParams } from "react-router-dom";
 
                 const onSubmit = async e => {
                     e.preventDefault();
-                    await Axios.put(`http://localhost:3000/users/${id}`, user);
+                    await Axios.put(`http://localhost:3003/users/${id}`, user);
                     history.push("/");
                 };
 
 
                 const loadUser = async () => {
 
-                const result = await Axios.get(`http://localhost:3000/users/${id}`);
+                const result = await Axios.get(`http://localhost:3003/users/${id}`);
 
                  setUser(result.data)
                 }
