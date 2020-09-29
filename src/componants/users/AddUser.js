@@ -25,7 +25,7 @@ import  { useHistory } from "react-router-dom";
 
                 const onSubmit = async e => {
                     e.preventDefault();
-                    await Axios.post("http://localhost:3003/users/", user);
+                    await Axios.post("http://localhost:3000/users/", user);
                     history.push("/");
                 };
 
